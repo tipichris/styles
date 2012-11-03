@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="sort-only" default-locale="en-US">
   <info>
-    <title>Polish Botanical Society Journals - Acta Societatis Botanicorum Poloniae</title>
-    <id>http://www.zotero.org/styles/pbsjournals-asbp</id>
-    <link href="http://www.zotero.org/styles/pbsjournals-asbp" rel="self"/>
+    <title>Polish Botanical Society</title>
+    <id>http://www.zotero.org/styles/polish-botanical-society</id>
+    <link href="http://www.zotero.org/styles/polish-botanical-society" rel="self"/>
     <link href="https://pbsociety.org.pl/journals/index.php/asbp/about/submissions#authorGuidelines" rel="documentation"/>
     <author>
       <name>Piotr Otręba</name>
@@ -21,7 +21,7 @@
     <issn>0001-6977</issn>
     <issn>2083-9480</issn>
     <summary>Modified default Vancouver style available at Zotero, for Acta Societatis Botanicorum Poloniae Journal (published by Polish Botanical Society)</summary>
-    <updated>2011-05-31T00:00:00+00:00</updated>
+    <updated>2012-10-15T22:46:45+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <macro name="author">

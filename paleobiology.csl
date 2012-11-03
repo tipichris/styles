@@ -14,7 +14,7 @@
     <category citation-format="author-date"/>
     <category field="biology"/>
     <issn>0094-8373</issn>
-    <updated>2012-05-02T11:11:11+00:00</updated>
+    <updated>2012-10-18T22:38:43+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <macro name="author">
@@ -159,6 +159,8 @@
                 </group>
               </group>
               <text prefix=" " suffix=", " macro="publisher"/>
+              <text variable="page" suffix=" "/>
+              <text term="page" form="short"/>
             </group>
           </if>
           <else-if type="thesis" match="any">
@@ -166,7 +168,14 @@
             <group delimiter=", ">
               <text variable="genre"/>
               <text macro="publisher"/>
-              <text variable="number-of-pages"/>
+              <choose>
+                <if is-numeric="number-of-pages">
+                  <text variable="number-of-pages"/>
+                </if>
+                <else>
+                  <text variable="page"/>
+                </else>
+              </choose>
             </group>
             <text term="page" form="short" prefix="p"/>
           </else-if>

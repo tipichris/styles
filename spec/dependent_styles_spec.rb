@@ -79,7 +79,7 @@ Dependents.each_pair do |id, (filename, path, style)|
       it "has the same citation-format as its independent-parent" do
         parent = style.independent_parent_link[/[^\/]+$/]
         parent = Independents[parent][-1]
-        
+
         style.citation_format.should == parent.citation_format
       end
 

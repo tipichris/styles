@@ -14,9 +14,15 @@
     </author>
     <category citation-format="note"/>
     <summary>The Bluebook legal citation style for law reviews.</summary>
-    <updated>2012-01-01T00:00:00+00:00</updated>
+    <updated>2012-10-25T21:15:26+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
+  <locale>
+    <terms>
+      <term name="editor" form="verb-short">ed.</term>
+      <term name="translator" form="verb-short">trans.</term>
+    </terms>
+  </locale>
   <!-- sets up basics of dealing with authors -->
   <macro name="name-macro">
     <names variable="author">
