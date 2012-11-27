@@ -18,6 +18,7 @@
   <locale xml:lang="en">
     <terms>
       <term name="et-al">et al</term>
+      <term name="no date" form="short">nd</term>
     </terms>
   </locale>
   <macro name="editor">
@@ -409,7 +410,7 @@
               <group>
                 <text macro="title" prefix=" “" suffix=".”"/>
                 <group prefix=" " delimiter=" ">
-                  <text term="in" text-case="capitalize-first" suffix=" " />
+                  <text term="in" text-case="capitalize-first" suffix=": " />
                   <text macro="bookauthor" suffix=""/>
                   <group delimiter=" " prefix=" " suffix=".">
                     <text variable="container-title" font-style="italic"/>
