@@ -127,16 +127,27 @@
             <text variable="archive" suffix=". "/>
           </if>
         </choose>
-        <text variable="URL" prefix="" suffix=""/>
+        <choose>
+          <if variable="DOI">
+            <text variable="DOI" prefix="http://dx.doi.org/"/>
+          </if>
+          <else-if variable="URL">
+            <text variable="URL" prefix="" suffix=""/>
+          </else-if>
+        </choose>
       </group>
-      <group prefix=" [" suffix="]">
-        <text term="accessed" text-case="capitalize-first" suffix=" "/>
-        <date variable="accessed">
-          <date-part name="day" suffix=" "/>
-          <date-part name="month" suffix=" "/>
-          <date-part name="year"/>
-        </date>
-      </group>
+      <choose>
+        <if variable="URL DOI" match="any">
+          <group prefix=" [" suffix="]">
+            <text term="accessed" text-case="capitalize-first" suffix=" "/>
+            <date variable="accessed">
+              <date-part name="day" suffix=" "/>
+              <date-part name="month" suffix=" "/>
+              <date-part name="year"/>
+            </date>
+          </group>
+        </if>
+      </choose>
     </group>
   </macro>
   <macro name="title">
@@ -217,7 +228,7 @@
   </macro>
   <macro name="online">
     <choose>
-      <if variable="URL">
+      <if variable="URL DOI" match="any">
         <text value="[online]"/>
       </if>
     </choose>
