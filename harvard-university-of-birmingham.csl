@@ -127,17 +127,10 @@
             <text variable="archive" suffix=". "/>
           </if>
         </choose>
-        <choose>
-          <if variable="DOI">
-            <text variable="DOI" prefix="http://dx.doi.org/"/>
-          </if>
-          <else-if variable="URL">
-            <text variable="URL" prefix="" suffix=""/>
-          </else-if>
-        </choose>
+        <text variable="URL" prefix="" suffix=""/>
       </group>
       <choose>
-        <if variable="URL DOI" match="any">
+        <if variable="URL">
           <group prefix=" [" suffix="]">
             <text term="accessed" text-case="capitalize-first" suffix=" "/>
             <date variable="accessed">
