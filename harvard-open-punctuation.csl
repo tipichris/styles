@@ -417,7 +417,7 @@
                   <text term="in" text-case="capitalize-first" suffix=": " />
                   <text macro="bookauthor" suffix=""/>
                   <group delimiter="" prefix=" " suffix=".">
-                    <text variable="container-title" font-weight="bold"/>
+                    <text variable="container-title" font-style="italic"/>
                     <group delimiter=" " prefix=". ">
                       <text variable="collection-title"/>
                       <text variable="collection-number"/>
